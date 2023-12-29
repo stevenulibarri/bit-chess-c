@@ -21,6 +21,7 @@ cl /Foout\ /std:c11 /Wall .\src\bit-chess.c .\src\utils.c /link /out:.\bin\bit-c
 1. Reasonably concise board state representation.
 2. Handle all standard rules (castling, [en passant](https://en.wikipedia.org/wiki/En_passant), promotion).
 3. Parse/validate/output [algebraic notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)) (probably ignore less common but still valid variations).
+4. Mess with bitwise operators, pointers, structs, unions, macros, etc even if not strictly necessary.
 
 ## Not Goals
 1. Not building a chess engine; maybe later though.
@@ -28,6 +29,7 @@ cl /Foout\ /std:c11 /Wall .\src\bit-chess.c .\src\utils.c /link /out:.\bin\bit-c
 ## Stretch Goals
 1. Optionally output [PGN markup](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#PGN) instead of only notation.
 2. GUI (maybe raylib?)
+3. Compile for different architectures (cmake?)
 
 ## Design
 The board is an array of 8 32-bit unsigned ints.  
